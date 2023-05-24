@@ -146,4 +146,20 @@ img {
     float: left;
 
 }
+.three{
+    border: 1px solid black ;
+    height: 450 px;
+    width: 90%;
+    margin: 20px;
+    padding: 0 30px 30px 90px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    border-radius: 20px ;
+    display: flex;
+}
+.three .div-img{
+   height: 500px;
+   width: 500px;
+}
 

@@ -5,13 +5,17 @@ body {
 .header {
     display: flex;
     text-align: center;
-    height: 90px;
+    height: 70px;
     justify-content: space-between;
-    /* padding:20px 0 20px 0 ;   */
     background-color: white;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
-    
-
+    position: fixed;
+    width: 100%;
+    z-index: 997;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
 
 }
 
@@ -19,8 +23,6 @@ body {
 
     height: inherit;
     width: 20%;
-    /* margin: 0 0 0 5px; */
-
 }
 
 .header .logo img {
@@ -43,37 +45,80 @@ body {
 .header .nav-bar ul {
     width: 100%;
     display: flex;
-
     padding: 0 0 0 20px;
 }
 
 .header .nav-bar ul li {
     list-style: none;
-    margin-right: 50px;
-
-
+    margin-right: 10px;
+    padding: 10px;
 }
 
 .header .nav-bar ul li a {
     text-decoration: none;
     color: #0f394c;
     font-family: 'Dosis', sans-serif;
+    transition: 0.3S;
+
 }
 
+.header .nav-bar ul li a:hover {
+    color: #49b5e7;
+    border-radius: 2px;
+
+}
+.header .nav-bar ul li.active{
+    color: #49b5e7; 
+}
+
+
+.sub-menu1 {
+    display: none;
+}
+
+.header .nav-bar ul li:hover .sub-menu1 {
+    display: block;
+
+}
+
+.header .nav-bar ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+    width: 100%;
+    position: absolute;
+
+}
+
+.header .nav-bar ul li:hover .sub-menu1 ul li {
+    width: 130px;
+    padding: 10px;
+    background: #fff;
+    text-align: left;
+    border-radius: 0;
+}
+
+.header .nav-bar ul li:hover .sub-menu1 ul li a:hover {
+    color: #49b5e7;
+}
+
+.fa {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
 
 .hero {
     height: 450 px;
     width: 90%;
     margin: 20px;
-    padding: 0 30px 30px 90px;
+    padding: 90px 0 30px 90px;
     font-size: medium;
-    color: black;
     text-align: center;
     text-transform: uppercase;
     font-family: sans-serif;
-    border-radius: 20px ;
+    border-radius: 20px;
     display: flex;
-  
+
 
 }
 
@@ -87,11 +132,8 @@ img {
     height: 100%;
     padding-right: 100px;
     width: 50%;
-    /* font-size: 15px;
-    font-weight: 300; */
-    /* line-height: 24px; */
-
 }
+
 
 .hero .second {
     height: 100%;
@@ -99,6 +141,7 @@ img {
     width: 50%;
     margin-right: 20px;
 }
+
 
 .hero .second image {
     height: 100%;
@@ -126,10 +169,10 @@ img {
     margin: 10px 0 0 10px;
     font-family: "Dosis", sans-serif;
     padding-bottom: 10px;
-    
+
 }
 
-.hero .first button  {
+.hero .first button {
     border: 1px solid blueviolet;
     background-color: #49b5e7;
     color: #fff;
@@ -139,27 +182,491 @@ img {
     font-weight: 500;
     margin-top: 5px;
     padding-right: 8px 28px;
-    display: inline-block;
+    display: block;
     width: 200px;
     height: 50px;
     border: none;
     float: left;
-
 }
-.three{
-    border: 1px solid black ;
-    height: 450 px;
-    width: 90%;
-    margin: 20px;
-    padding: 0 30px 30px 90px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    border-radius: 20px ;
+.hero .first button:hover{
+    cursor: pointer;  
+}
+
+.section-three .section-three-container {
     display: flex;
 }
-.three .div-img{
-   height: 500px;
-   width: 500px;
+
+.section-three .section-three-container .section3-img {
+    width: 50%;
+    padding: 0 12px 0 12px;
 }
 
+.section3-main-content {
+    width: 50%;
+    padding: 40px 40px 40px 40px;
+
+}
+
+.section-three-content {
+    margin: 5px 5px 5px 5px;
+}
+
+
+.main {
+    display: flex;
+    margin: 20px;
+}
+
+.main .icon {
+    height: inherit;
+    width: 20%;
+}
+
+.main .icon i {
+    border: 1px solid #49b5e7;
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.main .icon i:hover {
+    background: #49b5e7;
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.main .icon .fa-solid {
+    padding: 15px 10px 10px 10px;
+    color: #49b5e7;
+}
+
+.main .sub-content {
+    height: inherit;
+    width: 80%;
+}
+
+.sub-content a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.sub-content a:hover {
+    color: #49b5e7;
+    text-decoration: none;
+}
+
+.counts .counts-one {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    position: relative;
+    padding: 20px 0 60px 0;
+    background-size: cover;
+    margin: 20px 0 20px 0;
+    height: 210px;
+    background: url(img/counts-bg.jpg);
+    background-size: cover;
+    opacity: 0.8;
+
+
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    height: 35%;
+    margin: 30px;
+}
+
+.table {
+    height: 60%;
+    display: flex;
+
+
+}
+
+.table-one {
+    width: 100%;
+
+}
+
+.bold {
+    font-size: 44px;
+}
+
+.content {
+    color: #49b5e7;
+    text-align: center;
+}
+
+.content p {
+    color: #444444;
+}
+
+.grid-container {
+    height: 300px;
+    width: 80%;
+    margin: 50px 114px 50px 114px;
+    padding: 0 12px 0 12px;
+}
+
+.inner-container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.contents {
+    border: 1px solid #eee;
+    width: 25%;
+    height: 100%;
+}
+
+.contents img {
+    width: 70px;
+    height: 70px;
+    margin: 20px 40px 20px 100px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.contents:hover img {
+    filter: grayscale(5%);
+    transition: 0.5s;
+    transform: scale(1.2);
+
+}
+
+.services {
+    height: 750px;
+    width: 100%;
+    background-color: rgb(244, 251, 254);
+
+}
+
+.services .services-1 {
+
+    text-align: center;
+    display: block;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: rgb(244, 251, 254);
+
+}
+
+.services .services-1 h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0f394c;
+}
+
+.container11 {
+    margin: 70px;
+    display: block;
+    text-align: start;
+}
+
+.services .services-1 P {
+    color: #0f394c;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(244, 251, 254);
+
+
+}
+
+
+.container2-item {
+    font-size: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0 50px 0;
+    margin: 10px;
+    display: flex;
+    height: 100px;
+    width: 30%;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.container2-item h2 {
+    margin-left: 65px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.container2-item p {
+    font-size: 14px;
+    margin-left: 65px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.container2-item a {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.3s ease-in-out;
+}
+
+.container2-item a:hover {
+    text-decoration: none;
+    color: #49b5e7;
+}
+
+#icon {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 400;
+    vertical-align: -0.25em;
+    left: -20px;
+    position: absolute;
+    text-transform: none;
+    text-align: start;
+    margin-top: 15px;
+}
+
+.Portfolio {
+    padding: 40px 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+
+.Portfolio-container {
+    width: 90%;
+    display: block;
+    padding: 0 12px 0 12px;
+    margin: 0 120px 0 50px;
+    font-family: open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+
+
+}
+
+.Portfolio-container h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.Portfolio-container p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.portfolio-class {
+    padding: 20px;
+    width: 90%;
+    margin: 0 40px 0 40px;
+
+}
+
+.portfoliolink {
+
+    margin-bottom: 15px;
+}
+
+.portfolio-class ul {
+    display: flex;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    padding-left: 400px;
+
+}
+
+.portfolio-class ul li {
+    list-style: none;
+    background: #eee;
+    padding: 5px 20px 5px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 15px;
+}
+.portfolio-class ul li.active {
+    background: #49b5e7;
+    color: #fff;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .itembox {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin: 15px;
+}
+
+.product .itembox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-size: 50px;
+}
+
+
+@media screen and (max-width:480px) {
+    .header {
+        display: flex;
+        text-align: justify;
+        height: 70px;
+        justify-content: space-between;
+        background-color: red;
+        position: fixed;
+        width: 100%;
+    }
+
+    .header .logo img {
+        height: 50px;
+        width: 100px;
+        padding: 10px 0 0 12px;
+
+    }
+
+    .header .nav-bar {
+        display: flex;
+        padding: 0 0 0 0;
+        margin: 0 85px 0 50px;
+        box-sizing: border-box;
+        text-size-adjust: none;
+
+
+    }
+
+    .header .nav-bar ul {
+        width: 100%;
+
+    }
+
+    .header .nav-bar ul li {
+        list-style: none;
+        padding: 10px;
+    }
+
+    .header .nav-bar ul li a {
+        text-decoration: none;
+        color: #0f394c;
+        font-family: 'Dosis', sans-serif;
+        transition: 0.3S;
+
+    }
+
+    .hero {
+        height: 300 px;
+        width: 100%;
+        margin: 20px;
+        padding: 90px 0 30px 90px;
+        font-size: medium;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        border-radius: 20px;
+        display: block;
+
+
+    }
+
+    img {
+        width: 100%;
+        height: 300px
+    }
+
+    .hero .first {
+        height: 100%;
+        padding-right: 100px;
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 50%;
+
+    }
+
+    .hero .second {
+        height: 100%;
+        padding-right: 100px;
+        width: 100%;
+        margin-right: 20px;
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .hero .second image {
+        height: 100%;
+        width: 100%
+    }
+
+    .hero .first h1 {
+        box-sizing: border-box;
+        color: rgb(15, 57, 76);
+        font-family: Dosis, sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .hero .first h2 {
+
+        color: #1c698c;
+        font-size: 20px;
+        text-align: start;
+        margin: 10px 0 0 10px;
+        font-family: "Dosis", sans-serif;
+        padding-bottom: 10px;
+
+    }
+
+    .hero .first button {
+        border: 1px solid blueviolet;
+        background-color: #49b5e7;
+        color: #fff;
+        border-radius: 5px;
+        font-family: Dosis, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 5px;
+        padding-right: 8px 28px;
+        display: block;
+        width: 200px;
+        height: 50px;
+        border: none;
+
+    }
+
+
+
+}
+
+@media screen and (max-width:700px) {}

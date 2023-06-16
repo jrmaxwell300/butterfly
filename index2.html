@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/53f0328f1a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -21,20 +22,30 @@
         </div>
         <div class="nav-bar">
             <ul>
-
-                <li><a class="active" href="index2.html"><b>HOME</b></a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="portfoil.html">PORTFOLIO</a></li>
-                <li><a href="team.html">TEAM</a></li>
-                <li><a href="dropdown.html">DROPDOWN</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-
+                <li class="active"><a href="#home"><b>HOME</b></a></li>
+                <li><a href="#about"><b>ABOUT</b></a></li>
+                <li><a href="#services"><b>SERVICES</b></a></li>
+                <li><a href="#portfolio"><b>PORTFOLIO</b></a></li>
+                <li><a href="#team"><b>TEAM</b></a></li>
+                <li><a href="#dropdown"><b>DROPDOWN</b>
+                        <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down <i class="fa-solid fa-chevron-left"></i> </a>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#contact"><b>CONTACT</b></a></li>
             </ul>
         </div>
 
     </section>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="first">
             <h1>
                 CREATING WEBSITES THAT MAKE YOU STOP & STARE
@@ -55,45 +66,222 @@
         </div>
 
     </section>
-   
-   
-   
-    <section class="three">
-        <div>
-            <div class="div-img">
+
+
+
+    <section class="section-three" id="about">
+        <div class="section-three-container">
+            <div class="section3-img">
                 <img src="img/about.jpg" alt="">
             </div>
-            
-            <div class="div-one">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.
-                Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi.
-                Libero laboriosam sint et id nulla tenetur.
-                Suscipit aut voluptate.</p>
+
+            <div class="section3-main-content">
+                <div class="section-three-content">
+                    <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+                    <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.
+                        Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores
+                        excepturi.
+                        Libero laboriosam sint et id nulla tenetur.
+                        Suscipit aut voluptate.</p>
+                </div>
+
+                <div class="section-three-sub-content">
+                    <div class="main">
+                        <div class=" icon"><i class="fa-solid fa-fingerprint fa-2x"></i></div>
+                        <div class="sub-content">
+                            <h4><a href="">Lorem Ipsum</a></h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident</p>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <div class=" icon"><i class="fa-solid fa-gift fa-2x"></i></div>
+                        <div class="sub-content">
+                            <h4><a href="">Nemo Enim</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque</p>
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <div class=" icon"><i class="fa-solid fa-atom fa-2x"></i></div>
+                        <div class="sub-content">
+                            <h4><a href="">Dine Pad</a></h4>
+                            <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut
+                                deserunt minus aut eligendi omnis</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div>
-                <div><i class="fa-sharp fa-regular fa-fingerprint"></i></div>
-                <h4 ><a href="">Lorem Ipsum</a></h4>
-                <p >Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident</p>
-            </div>
-           
-            <div >
-                <div ><i class="fa-solid fa-gift"></i></div>
-                <h4><a href="">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-  
-            <div>
-                <div><i class="fa-solid fa-atom"></i></div>
-                <h4 ><a href="">Dine Pad</a></h4>
-                <p >Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-            </div>
-           
         </div>
     </section>
 
-</body>
+    <section class="counts">
+        <div class="counts-one">
+            <div class="text">
+                <h3>What we have achieved so far</h3>
+                <p>Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.</p>
+            </div>
 
+
+            <div class="table">
+                <table class="table-one">
+                    <tbody class=" content">
+                        <tr>
+                            <td>
+                                <h1><b class="bold">232</b></h1>
+                                <p><b>Clients</b></p>
+                            </td>
+                            <td>
+                                <h1><b class="bold">521</b></h1>
+                                <p><b>Projects</b></p>
+                            </td>
+                            <td>
+                                <h1><b class="bold">1463</b></h1>
+                                <p><b>Hours Of Support</b></p>
+                            </td>
+                            <td>
+                                <h1><b class="bold">15</b></h1>
+                                <p><b>Hard Workers</b></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-container">
+        <div class="inner-container">
+            <div class="contents"><img src="img/clients/client-1.png" alt=""></div>
+            <div class="contents"><img src="img/clients/client-2.png" alt=""></div>
+            <div class="contents"><img src="img/clients/client-3.png" alt=""></div>
+            <div class="contents"><img src="img/clients/client-4.png" alt=""></div>
+        </div>
+
+        <div class="inner-container">
+            <div class="contents"><img src="img/clients/client-5.png" alt=""></div>
+            <div class="contents"><img src="img/clients/client-6.png" alt=""></div>
+            <div class="contents"><img src="img/clients/client-7.png" alt=""></div>
+            <div class="contents"><img src="img/clients/client-8.png" alt=""></div>
+        </div>
+    </div>
+
+    <section class="services" id="services">
+        <div class="container11">
+            <div class="services-1">
+                <h2>SERVICES</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                    Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                    ea.
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="container2">
+                <div class="container2-item">
+                    <div class="box">
+                        <div id="icon">
+                            <i class="fa-solid fa-money-bill" style="color: #ff689b;"></i>
+                        </div>
+                        <h2><a href="#">Lorem Ipsum</a></h2>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident</p>
+                    </div>
+                </div>
+
+                <div class="container2-item">
+                    <div class="box">
+                        <div id="icon">
+                            <i class="fa-solid fa-calendar-days" style="color: #e9bf06;"></i>
+                        </div>
+                        <h2><a href="#">Dolor Sitema</a></h2>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat tarad limino ata</p>
+                    </div>
+                </div>
+
+                <div class="container2-item">
+                    <div class="box">
+                        <div id="icon">
+                            <i class="fa-solid fa-comment-dots" style="color: #3fcdc7;"></i>
+                        </div>
+                        <h2><a href="#">Sed ut perspiciatis</a></h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur</p>
+                    </div>
+                </div>
+
+                <div class="container2-item">
+                    <div class="box">
+                        <div id="icon">
+                            <i class="fa-regular fa-credit-card" style="color: #41cf2e;"></i>
+                        </div>
+                        <h2><a href="#">Magni Dolores</a></h2>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum</p>
+                    </div>
+                </div>
+
+                <div class="container2-item">
+                    <div class="box">
+                        <div id="icon">
+                            <i class="fa-solid fa-globe" style="color: #d6ff22;"></i>
+                        </div>
+                        <h2><a href="#">Nemo Enim</a></h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque</p>
+                    </div>
+                </div>
+
+                <div class="container2-item">
+                    <div class="box">
+                        <div id="icon">
+                            <i class="fa-regular fa-clock" style="color: #4680ff;"></i>
+                        </div>
+                        <h2><a href="#">Eiusmod Tempor</a></h2>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                            nobis est eligendi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Portfolio" id="portfolio">
+        <div class="Portfolio-container">
+            <h2>Portfolio</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit.
+                Quisquam quos quisquam cupiditate.
+                Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+        </div>
+        <div class="portfolio-row">
+            <div class="portfolio-class">
+                <div class="portfoliolink">
+                    <ul>
+                        <li class="list active" data-filter="ALL">ALL</li>
+                        <li class="list" data-filter="ALL">APP</li>
+                        <li class="list" data-filter="ALL">CARD</li>
+                        <li class="list" data-filter="ALL">WEB</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <div class="itembox APP"><img src="img/portfolio/portfolio-1.jpg"></div>
+                    <div class="itembox APP"><img src="img/portfolio/portfolio-3.jpg"></div>
+                    <div class="itembox APP"><img src="img/portfolio/portfolio-6.jpg"></div>
+                    <div class="itembox CARD"><img src="img/portfolio/portfolio-4.jpg"></div>
+                    <div class="itembox CARD"><img src="img/portfolio/portfolio-7.jpg"></div>
+                    <div class="itembox CARD"><img src="img/portfolio/portfolio-8.jpg"></div>
+                    <div class="itembox WEB"><img src="img/portfolio/portfolio-2.jpg"></div>
+                    <div class="itembox WEB"><img src="img/portfolio/portfolio-5.jpg"></div>
+                    <div class="itembox WEB"><img src="img/portfolio/portfolio-9.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+</body>
 </html>
